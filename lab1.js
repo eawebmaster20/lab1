@@ -9,7 +9,20 @@ function capitalize(str) {
 
 // reverse a string
 function reverse(str) {
-    return str.reverse()
+    let result;
+    if (str==='') {
+        return;
+    }
+    for (const word of str) {
+        result = result + word
+    }
+    return result
 }
+
+// words in a string
+function wordCount(str){
+    return str.split(' ').length
+}
+
 
 
