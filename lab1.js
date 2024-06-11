@@ -9,12 +9,12 @@ function capitalize(str) {
 
 // reverse a string
 function reverse(str) {
-    let result;
+    let result='';
     if (str==='') {
         return;
     }
-    for (const word of str) {
-        result = result + word
+    for (const word of str.split(' ')) {
+        result = result +' '+ word
     }
     return result
 }
@@ -35,4 +35,20 @@ function isPalindrome(str) {
         return true;
 }
 
-console.log(isPalindrome('abbdsfba'))
+
+
+/* ************************************************************************
+ARRAY TRANSFORMATION
+********************************************************************** */
+
+// double
+function double(arr) {
+    return arr.map(el=> el * 2)
+}
+
+// filter even numbers
+function filterEven(arr) {
+    return arr.filter(el=>el % 2)
+}
+
+console.log(filterEven([1,2,5,8]));
