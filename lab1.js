@@ -9,12 +9,12 @@ function capitalize(str) {
 
 // reverse a string
 function reverse(str) {
-    let result;
+    let result='';
     if (str==='') {
         return;
     }
-    for (const word of str) {
-        result = result + word
+    for (const word of str.split(' ')) {
+        result = result +' '+ word
     }
     return result
 }
@@ -35,4 +35,45 @@ function isPalindrome(str) {
         return true;
 }
 
-console.log(isPalindrome('abbdsfba'))
+
+
+/* ************************************************************************
+ARRAY TRANSFORMATION
+********************************************************************** */
+
+// double
+function double(arr) {
+    return arr.map(el=> el * 2)
+}
+
+// filter even numbers
+function filterEven(arr) {
+    return arr.filter(el=>el % 2)
+}
+
+// calculate sum of array element
+function sum(arr) {
+    let result=0;
+    for (const el of arr) {
+        result += el;
+    }
+    return result
+}
+
+// calculate average of array elements
+function average(arr) {
+    let result=0;
+    for (const el of arr) {
+        result += el;
+    }
+    return (result/arr.length).toFixed(2)
+}
+
+
+
+/* ************************************************************************
+OBJECT TRANSFORMATION
+********************************************************************** */
+function fullName(person) {
+    ret
+}
