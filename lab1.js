@@ -1,6 +1,6 @@
-/* 
+/* ******************************************************
 STRING TRANSFORMATION
-*/
+******************************************************* */
 
 // capitalize the first letter of a string
 function capitalize(str) {
@@ -13,8 +13,8 @@ function reverse(str) {
     if (str==='') {
         return;
     }
-    for (const word of str.split(' ')) {
-        result = result +' '+ word
+    for (let i = 0; i < str.length; i++) {
+        result = result + str[(str.length-1) -i]
     }
     return result
 }
@@ -43,12 +43,12 @@ ARRAY TRANSFORMATION
 
 // double
 function double(arr) {
-    return arr.map(el=> el * 2)
+    return arr.map(el=> el * 2);
 }
 
 // filter even numbers
 function filterEven(arr) {
-    return arr.filter(el=>el % 2)
+    return arr.filter(el=>el % 2);
 }
 
 // calculate sum of array element
@@ -74,6 +74,19 @@ function average(arr) {
 /* ************************************************************************
 OBJECT TRANSFORMATION
 ********************************************************************** */
+// fullname
 function fullName(person) {
-    ret
+    return person.firstName +' '+ person.lastName;
 }
+
+// check if a person is adult
+function isAdult(person) {
+    if (person.age > 17) return true;
+    return false;
+}
+
+// filter array by age to get only 'minAge' persons
+function filterByAge(people, minAge) {
+    return people.filter(person=> person.age >= minAge)
+}
+
