@@ -51,4 +51,12 @@ function filterEven(arr) {
     return arr.filter(el=>el % 2)
 }
 
-console.log(filterEven([1,2,5,8]));
+// calculate sum of array element
+function sum(arr) {
+    let result=0;
+    for (const el of arr) {
+        result += el;
+    }
+    return result
+}
+console.log(sum([1,2,5]));
