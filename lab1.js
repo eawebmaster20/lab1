@@ -59,4 +59,21 @@ function sum(arr) {
     }
     return result
 }
-console.log(sum([1,2,5]));
+
+// calculate average of array elements
+function average(arr) {
+    let result=0;
+    for (const el of arr) {
+        result += el;
+    }
+    return (result/arr.length).toFixed(2)
+}
+
+
+
+/* ************************************************************************
+OBJECT TRANSFORMATION
+********************************************************************** */
+function fullName(person) {
+    ret
+}
