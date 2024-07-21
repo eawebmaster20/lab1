@@ -74,7 +74,7 @@ function average(arr) {
     for (const el of arr) {
         result += el;
     }
-    return (result/arr.length).toFixed(2)
+    return (Math.floor(result/arr.length))
 }
 
 
@@ -112,3 +112,5 @@ function compose(...arg) {
 }
 console.log(compose(sum,double,[1,2,5,8,3]));
 console.log(compose(capitalize,reverse,'tnemevom'));
+
+module.exports = {capitalize, reverse,wordCount, sum,isPalindrome,double,filterEven,average,fullName,isAdult,filterByAge,compose}
